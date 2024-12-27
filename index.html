@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tourist Management System</h1>
+  </header>
+
+  <main>
+    <section id="top-rated-attractions">
+      <h2>Top Rated Attractions</h2>
+      <ul id="attraction-list"></ul>
+    </section>
+
+    <section id="register-visitor">
+      <h2>Register a Visitor</h2>
+      <form id="visitor-form">
+        <label for="visitor-name">Name:</label>
+        <input type="text" id="visitor-name" name="visitor-name" required>
+
+        <label for="visitor-email">Email:</label>
+        <input type="email" id="visitor-email" name="visitor-email" required>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section id="post-review">
+      <h2>Post a Review</h2>
+      <form id="review-form">
+        <label for="visitor-id">Visitor ID:</label>
+        <input type="text" id="visitor-id" name="visitor-id" required>
+
+        <label for="attraction-id">Attraction ID:</label>
+        <input type="text" id="attraction-id" name="attraction-id" required>
+
+        <label for="review-score">Score (1-5):</label>
+        <input type="number" id="review-score" name="review-score" min="1" max="5" required>
+
+        <label for="review-comment">Comment:</label>
+        <textarea id="review-comment" name="review-comment"></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
